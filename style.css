@@ -1,0 +1,116 @@
+@font-face {
+  font-family: FigtreeExtraBold;
+  src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: FigtreeSemiBold;
+  src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(47, 88%, 63%);
+}
+.card-container {
+  width: 384px;
+  height: 522px;
+  background-color: white;
+  border-radius: 20px;
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 10px 10px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+.card-image {
+  width: 336px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-details {
+  padding: 24px;
+  font-family: FigtreeSemiBold, sans-serif;
+}
+.card-category {
+  width: 82px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: hsl(47, 88%, 63%);
+  font-family: FigtreeExtraBold, sans-serif;
+}
+.card-date {
+  padding: 12px 0 0 0;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-family: FigtreeSemiBold, sans-serif;
+}
+.card-title {
+  padding: 6px 0 0 0;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: FigtreeExtraBold, sans-serif;
+}
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+.card-info {
+  padding: 6px 0 0 0;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-family: FigtreeSemiBold, sans-serif;
+  color: hsl(0, 0%, 42%);
+}
+.card-footer {
+  height: 32px;
+  padding: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+}
+.card-footer span {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-family: FigtreeExtraBold, sans-serif;
+  align-self: center;
+  padding: 10px;
+}
+@media screen and (max-width: 404px) {
+  .card-container {
+    width: 327px;
+    height: 501px;
+  }
+  .card-image {
+    width: 279px;
+    height: 200px;
+  }
+  .card-category {
+    width: 73px;
+    font-size: 12px;
+  }
+  .card-date {
+    font-size: 12px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-info {
+    font-size: 14px;
+  }
+}
